@@ -1,0 +1,11 @@
+{
+  "length_ms": 300,
+  "pitch_start_hz": 15000,
+  "pitch_end_hz": 1800,
+  "pitch_curve": "exponential",
+  "amp_shape": "punchy",
+  "click_layer": true,
+  "click_decay_pct": 50,
+  "gain_db": 0,
+  "limiter": true
+}

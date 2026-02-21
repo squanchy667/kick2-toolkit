@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "plugin_version": "1.5.3",
+    "source_file": "PROGRESSIVE_MELODIC_200.preset",
+    "design_notes": "Progressive psy kick - deep, round, melodic body. 138 BPM friendly. Long pitch sweep compressed into 200ms gives melodic tonal character without tail bloat."
+  },
+  "master": {
+    "length_ms": 200.0,
+    "single_length_mode": true,
+    "output_gain_db": 0.0,
+    "output_gain_position": 1.0,
+    "pan": 0.0,
+    "tuning_semitones": 0.0,
+    "pitch_wheel_range": 7.0,
+    "processing_mode": 1.0,
+    "gate": 0.0
+  },
+  "limiter": {
+    "enabled": true,
+    "threshold_db": 0.0,
+    "lookahead": 1.0,
+    "release": 1.0
+  },
+  "slots": [
+    {
+      "slot_number": 1,
+      "type": "sine",
+      "type_value": 1.0,
+      "gain_db": 1.2,
+      "muted": false,
+      "active": true,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "semitone_offset": 0.0,
+        "range_max": 100.0,
+        "nodes": [
+          {"x": 0.0,    "y": 0.42,   "c": 0.0},
+          {"x": 0.015,  "y": 0.32,   "c": -0.06},
+          {"x": 0.06,   "y": 0.22,   "c": -0.04},
+          {"x": 0.15,   "y": 0.14,   "c": -0.03},
+          {"x": 0.35,   "y": 0.075,  "c": -0.02},
+          {"x": 0.55,   "y": 0.048,  "c": -0.015},
+          {"x": 0.75,   "y": 0.035,  "c": -0.01},
+          {"x": 1.0,    "y": 0.030,  "c": 0.0}
+        ],
+        "coarse_nodes": [],
+        "calculated_frequencies": [
+          {"time_normalized": 0.0,   "time_ms": 0.0,   "freq_hz": 8400,  "y_raw": 0.42},
+          {"time_normalized": 0.015, "time_ms": 3.0,    "freq_hz": 6400,  "y_raw": 0.32},
+          {"time_normalized": 0.06,  "time_ms": 12.0,   "freq_hz": 4400,  "y_raw": 0.22},
+          {"time_normalized": 0.15,  "time_ms": 30.0,   "freq_hz": 2800,  "y_raw": 0.14},
+          {"time_normalized": 0.35,  "time_ms": 70.0,   "freq_hz": 1500,  "y_raw": 0.075},
+          {"time_normalized": 0.55,  "time_ms": 110.0,  "freq_hz": 960,   "y_raw": 0.048},
+          {"time_normalized": 0.75,  "time_ms": 150.0,  "freq_hz": 700,   "y_raw": 0.035},
+          {"time_normalized": 1.0,   "time_ms": 200.0,  "freq_hz": 600,   "y_raw": 0.030}
+        ]
+      },
+      "amp_envelope": {
+        "max_length_ms": 200.0,
+        "nodes": [
+          {"x": 0.0,    "y": 0.05,  "c": 0.0},
+          {"x": 0.003,  "y": 0.55,  "c": 0.0},
+          {"x": 0.008,  "y": 0.88,  "c": 0.0},
+          {"x": 0.015,  "y": 0.95,  "c": 0.0},
+          {"x": 0.025,  "y": 0.85,  "c": 0.0},
+          {"x": 0.05,   "y": 0.72,  "c": 0.0},
+          {"x": 0.08,   "y": 0.65,  "c": 0.0},
+          {"x": 0.12,   "y": 0.62,  "c": 0.0},
+          {"x": 0.18,   "y": 0.60,  "c": 0.0},
+          {"x": 0.25,   "y": 0.62,  "c": 0.0},
+          {"x": 0.33,   "y": 0.68,  "c": 0.0},
+          {"x": 0.42,   "y": 0.75,  "c": 0.0},
+          {"x": 0.50,   "y": 0.78,  "c": 0.0},
+          {"x": 0.58,   "y": 0.76,  "c": 0.0},
+          {"x": 0.65,   "y": 0.73,  "c": 0.0},
+          {"x": 0.72,   "y": 0.68,  "c": 0.0},
+          {"x": 0.78,   "y": 0.60,  "c": 0.0},
+          {"x": 0.83,   "y": 0.48,  "c": 0.0},
+          {"x": 0.87,   "y": 0.32,  "c": 0.0},
+          {"x": 0.91,   "y": 0.15,  "c": 0.0},
+          {"x": 0.94,   "y": 0.04,  "c": 0.0},
+          {"x": 0.96,   "y": 0.0,   "c": 0.0},
+          {"x": 1.0,    "y": 0.0,   "c": 0.0}
+        ],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 2,
+      "type": "sample",
+      "type_value": 2.0,
+      "gain_db": 0.8,
+      "muted": false,
+      "active": true,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "semitone_offset": 0.0,
+        "range_max": 100.0,
+        "nodes": [
+          {"x": 0.0,  "y": 1.0, "c": 0.0},
+          {"x": 1.0,  "y": 1.0, "c": 0.0}
+        ],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 200.0,
+        "nodes": [
+          {"x": 0.0,   "y": 0.85, "c": 0.0},
+          {"x": 0.01,  "y": 0.70, "c": 0.0},
+          {"x": 0.06,  "y": 0.25, "c": 0.0},
+          {"x": 0.15,  "y": 0.05, "c": 0.0},
+          {"x": 0.25,  "y": 0.0,  "c": 0.0},
+          {"x": 1.0,   "y": 0.0,  "c": 0.0}
+        ],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 3,
+      "type": "off",
+      "type_value": 0.0,
+      "gain_db": 0.0,
+      "muted": false,
+      "active": false,
+      "pitch_envelope": {"max_freq_hz": 20000, "nodes": [], "coarse_nodes": []},
+      "amp_envelope": {"max_length_ms": 200.0, "nodes": [], "coarse_nodes": []}
+    },
+    {
+      "slot_number": 4,
+      "type": "off",
+      "type_value": 0.0,
+      "gain_db": 0.0,
+      "muted": false,
+      "active": false,
+      "pitch_envelope": {"max_freq_hz": 20000, "nodes": [], "coarse_nodes": []},
+      "amp_envelope": {"max_length_ms": 200.0, "nodes": [], "coarse_nodes": []}
+    },
+    {
+      "slot_number": 5,
+      "type": "off",
+      "type_value": 0.0,
+      "gain_db": 0.0,
+      "muted": true,
+      "active": false,
+      "pitch_envelope": {"max_freq_hz": 20000, "nodes": [], "coarse_nodes": []},
+      "amp_envelope": {"max_length_ms": 200.0, "nodes": [], "coarse_nodes": []}
+    }
+  ],
+  "fx_routing": {
+    "insert1": {
+      "osc1": true,
+      "osc2": false,
+      "osc3": false,
+      "osc4": false,
+      "osc5": false,
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    },
+    "insert2": {
+      "osc1": false,
+      "osc2": true,
+      "osc3": false,
+      "osc4": false,
+      "osc5": false,
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    },
+    "master_fx": {
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    }
+  }
+}
