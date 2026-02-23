@@ -12,7 +12,6 @@ Usage:
 import json
 import os
 import sys
-import math
 import argparse
 from datetime import datetime
 
@@ -66,52 +65,52 @@ VIBES = {
     1: {
         "name": "Deep & Hypnotic",
         "desc": "Low, meditative groove. Smooth sweep, deep body, subtle movement.",
-        "pitch_start_hz": 6000,
-        "pitch_end_hz": 400,
+        "pitch_start_hz": 14000,
+        "pitch_end_hz": 2000,
         "sweep_speed": 0.35,       # 0 = slow, 1 = fast
         "default_attack": 0.40,
         "default_body": 0.75,
-        "default_body_shape": "smooth",
-        "length_pct": 0.58,        # fraction of one beat
+        "default_body_shape": "sustained",
+        "length_pct": 0.50,        # fraction of one beat
         "default_click": 0.30,
         "default_click_decay": 0.18,
     },
     2: {
         "name": "Groovy & Punchy",
         "desc": "Tight, rhythmic energy. Snappy attack, controlled body.",
-        "pitch_start_hz": 8500,
-        "pitch_end_hz": 600,
+        "pitch_start_hz": 13000,
+        "pitch_end_hz": 1800,
         "sweep_speed": 0.55,
         "default_attack": 0.70,
         "default_body": 0.55,
         "default_body_shape": "punchy",
-        "length_pct": 0.52,
+        "length_pct": 0.48,
         "default_click": 0.60,
         "default_click_decay": 0.16,
     },
     3: {
         "name": "Melodic & Warm",
         "desc": "Round, musical quality. Gentle sweep, warm sustain.",
-        "pitch_start_hz": 7000,
-        "pitch_end_hz": 500,
+        "pitch_start_hz": 11000,
+        "pitch_end_hz": 1500,
         "sweep_speed": 0.40,
         "default_attack": 0.50,
         "default_body": 0.70,
-        "default_body_shape": "smooth",
-        "length_pct": 0.55,
+        "default_body_shape": "sustained",
+        "length_pct": 0.50,
         "default_click": 0.40,
         "default_click_decay": 0.15,
     },
     4: {
         "name": "Driving & Energetic",
         "desc": "Forward momentum. Fast sweep, punchy body, strong presence.",
-        "pitch_start_hz": 10000,
-        "pitch_end_hz": 750,
+        "pitch_start_hz": 16000,
+        "pitch_end_hz": 2500,
         "sweep_speed": 0.65,
         "default_attack": 0.80,
         "default_body": 0.60,
-        "default_body_shape": "double_bump",
-        "length_pct": 0.50,
+        "default_body_shape": "deep_drive",
+        "length_pct": 0.46,
         "default_click": 0.70,
         "default_click_decay": 0.20,
     },
@@ -184,42 +183,56 @@ def generate_pitch_envelope(start_hz, end_hz, sweep_speed, max_hz=20000):
     """
     Create pitch-envelope nodes from musical intent.
 
-    start_hz  : initial click/transient frequency  (2 000 – 16 000)
-    end_hz    : settling body frequency             (200 – 2 000)
+    Shape: fast drop → plateau in "singing zone" → gradual settle.
+    Based on analysis of real progressive psy presets (KHAZ Hypnotic series).
+
+    start_hz   : initial click/transient frequency  (11 000 – 16 000)
+    end_hz     : settling body frequency             (1 500 – 2 500)
     sweep_speed: 0.0 = slow gradual, 1.0 = fast snappy
     """
     y_s = start_hz / max_hz
     y_e = end_hz / max_hz
 
-    # Exponential decay constant — higher = faster drop
-    decay = 3.0 + sweep_speed * 5.0          # 3.0 … 8.0
+    # Plateau sits at ~38-42% of start, varies with sweep speed
+    plateau_ratio = 0.40 - sweep_speed * 0.04        # 0.40 … 0.36
+    y_plateau = y_s * plateau_ratio
 
-    # Smooth negative curvature on inner nodes
-    c_base = -0.02 - sweep_speed * 0.06      # -0.02 … -0.08
+    # Fast drop target — slightly above plateau
+    drop_ratio = plateau_ratio + 0.02                 # 0.42 … 0.38
+    y_drop = y_s * drop_ratio
 
-    n = 8
-    nodes = []
-    for i in range(n):
-        t = i / (n - 1)
-        y = y_e + (y_s - y_e) * math.exp(-decay * t)
-        if i == 0 or i == n - 1:
-            c = 0.0
-        elif i <= 2:
-            c = c_base
-        else:
-            c = c_base * 0.5
-        nodes.append({"x": round(t, 4), "y": round(y, 5), "c": round(c, 3)})
+    # Drop position: faster sweep → earlier drop
+    x_drop = 0.08 - sweep_speed * 0.04               # 0.08 … 0.04
+
+    # Plateau end: faster sweep → shorter plateau
+    x_plateau = 0.35 - sweep_speed * 0.10             # 0.35 … 0.25
+
+    # Settle zone
+    x_settle = 0.82
+    y_settle = y_e * 1.1
+
+    nodes = [
+        {"x": 0.0,                    "y": round(y_s, 5),       "c": 0.0},
+        {"x": round(x_drop, 4),       "y": round(y_drop, 5),    "c": -0.23},
+        {"x": round(x_plateau, 4),    "y": round(y_plateau, 5), "c": 0.0},
+        {"x": x_settle,               "y": round(y_settle, 5),  "c": -0.11},
+        {"x": 1.0,                    "y": round(y_e, 5),       "c": -0.03},
+    ]
     return nodes
 
 
-def generate_amp_envelope(attack, body_level, tail_speed, body_shape="smooth"):
+def generate_amp_envelope(attack, body_level, tail_speed, body_shape="sustained"):
     """
     Create amplitude-envelope nodes from musical intent.
+
+    All body shapes use a dip-swell foundation — analysis of real progressive
+    psy kicks shows the dip-swell envelope produces a perceived smooth sustained
+    body in rendered audio. The double-bump creates the sustain feel.
 
     attack     : 0 = soft thud, 1 = hard snap
     body_level : 0 = thin, 1 = full sustain
     tail_speed : 0 = quick cut, 1 = long ring
-    body_shape : "smooth" | "punchy" | "double_bump"
+    body_shape : "sustained" | "punchy" | "deep_drive" | "lean"
     """
     nodes = []
 
@@ -230,39 +243,35 @@ def generate_amp_envelope(attack, body_level, tail_speed, body_shape="smooth"):
     nodes.append({"x": round(att_t * 0.4, 4), "y": round(peak * 0.6, 3),  "c": 0.0})
     nodes.append({"x": round(att_t, 4),       "y": round(peak, 3),         "c": 0.0})
 
-    # --- POST-ATTACK DIP ---
+    # --- POST-ATTACK DIP (with organic curvature) ---
     dip = peak * (0.12 + attack * 0.12)
     dip_x = att_t + 0.02 + (1.0 - attack) * 0.02
-    nodes.append({"x": round(dip_x, 4), "y": round(peak - dip, 3), "c": 0.0})
+    c_dip = -0.55 - attack * 0.15                # -0.55 … -0.70
+    nodes.append({"x": round(dip_x, 4), "y": round(peak - dip, 3), "c": round(c_dip, 2)})
 
-    # --- BODY (10 – 58 %) ---
+    # --- BODY — dip-swell shapes (all based on dip-swell foundation) ---
     sus = 0.40 + body_level * 0.38                # 0.40 – 0.78
 
-    if body_shape == "double_bump":
-        nodes += [
-            {"x": 0.12, "y": round(sus * 0.80, 3), "c": 0.0},
-            {"x": 0.20, "y": round(sus * 0.75, 3), "c": 0.0},
-            {"x": 0.30, "y": round(sus * 0.90, 3), "c": 0.0},
-            {"x": 0.40, "y": round(sus * 1.05, 3), "c": 0.0},
-            {"x": 0.50, "y": round(sus * 1.02, 3), "c": 0.0},
-            {"x": 0.58, "y": round(sus * 0.95, 3), "c": 0.0},
-        ]
-    elif body_shape == "punchy":
-        nodes += [
-            {"x": 0.10, "y": round(sus * 0.88, 3), "c": 0.0},
-            {"x": 0.20, "y": round(sus * 0.95, 3), "c": 0.0},
-            {"x": 0.35, "y": round(sus * 0.92, 3), "c": 0.0},
-            {"x": 0.50, "y": round(sus * 0.85, 3), "c": 0.0},
-        ]
-    else:  # smooth
-        nodes += [
-            {"x": 0.10, "y": round(sus * 0.88, 3), "c": 0.0},
-            {"x": 0.22, "y": round(sus * 0.96, 3), "c": 0.0},
-            {"x": 0.38, "y": round(sus, 3),         "c": 0.0},
-            {"x": 0.52, "y": round(sus * 0.97, 3), "c": 0.0},
-        ]
+    # Dip/swell ratios per shape
+    shape_params = {
+        "sustained":  (0.55, 0.88),   # thick, present — dip to 55%, swell to 88%
+        "punchy":     (0.40, 0.80),   # snappy, controlled
+        "deep_drive": (0.35, 0.92),   # maximum movement
+        "lean":       (0.65, 0.75),   # space for bass
+    }
+    dip_ratio, swell_ratio = shape_params.get(body_shape, (0.55, 0.88))
 
-    # --- TAIL ---
+    c_swell = -0.35 - body_level * 0.15          # -0.35 … -0.50
+
+    nodes += [
+        {"x": 0.12, "y": round(peak * dip_ratio * 0.9, 3),  "c": round(c_swell, 2)},
+        {"x": 0.20, "y": round(peak * dip_ratio, 3),        "c": round(c_swell, 2)},
+        {"x": 0.32, "y": round(peak * swell_ratio * 0.85, 3), "c": round(c_swell * 0.7, 2)},
+        {"x": 0.42, "y": round(peak * swell_ratio, 3),      "c": 0.0},
+        {"x": 0.52, "y": round(peak * swell_ratio * 0.97, 3), "c": 0.02},
+    ]
+
+    # --- TAIL (with gentle convex fade) ---
     last_y = nodes[-1]["y"]
     ts = 0.55 + (1.0 - tail_speed) * 0.15        # start of fade
     fd = 0.20 + tail_speed * 0.25                 # fade duration
@@ -270,10 +279,12 @@ def generate_amp_envelope(attack, body_level, tail_speed, body_shape="smooth"):
     end  = ts + fd
     zero = min(end + 0.03, 0.98)
 
+    c_tail = 0.03 + tail_speed * 0.02             # 0.03 … 0.05
+
     nodes += [
-        {"x": round(ts, 3),   "y": round(last_y * 0.80, 3), "c": 0.0},
-        {"x": round(mid, 3),  "y": round(last_y * 0.35, 3), "c": 0.0},
-        {"x": round(end, 3),  "y": round(last_y * 0.08, 3), "c": 0.0},
+        {"x": round(ts, 3),   "y": round(last_y * 0.80, 3), "c": round(c_tail, 2)},
+        {"x": round(mid, 3),  "y": round(last_y * 0.35, 3), "c": round(c_tail, 2)},
+        {"x": round(end, 3),  "y": round(last_y * 0.08, 3), "c": round(c_tail, 2)},
         {"x": round(zero, 3), "y": 0.0,                       "c": 0.0},
         {"x": 1.0,            "y": 0.0,                       "c": 0.0},
     ]
@@ -325,12 +336,12 @@ def run_questionnaire():
     # ── 4. PITCH DEPTH ───────────────────────────────────────
     print_header("4. PITCH DEPTH — How deep does the sweep go?")
     dc = ask_choice("Where should the pitch settle?", {
-        1: ("Very deep",  "Sub-bass region (~300-400 Hz) — heavy, underground"),
-        2: ("Deep",       "Warm bass (~450-600 Hz) — round, full"),
-        3: ("Medium",     "Balanced (~600-800 Hz) — versatile, present"),
-        4: ("Bright",     "Upper bass (~800-1100 Hz) — bright, cutting"),
+        1: ("Very deep",  "Lower body (~1200-1500 Hz) — heavy, underground"),
+        2: ("Deep",       "Warm body (~1500-1800 Hz) — round, full"),
+        3: ("Medium",     "Balanced (~1800-2200 Hz) — versatile, present"),
+        4: ("Bright",     "Upper body (~2200-2800 Hz) — bright, cutting"),
     }, default=2)
-    depth_mul = {1: 0.65, 2: 0.85, 3: 1.15, 4: 1.50}
+    depth_mul = {1: 0.75, 2: 0.90, 3: 1.10, 4: 1.30}
     answers["pitch_end_hz"]   = round(vibe["pitch_end_hz"] * depth_mul[dc])
     answers["pitch_start_hz"] = vibe["pitch_start_hz"]
     answers["sweep_speed"]    = vibe["sweep_speed"]
@@ -348,13 +359,13 @@ def run_questionnaire():
     # ── 6. BODY ──────────────────────────────────────────────
     print_header("6. BODY — How does the middle feel?")
     bc = ask_choice("What body shape?", {
-        1: ("Round & sustained",   "Full, warm, thick mid-section"),
-        2: ("Tight & punchy",      "Controlled, snappy, rhythmic"),
-        3: ("Bouncy (double-bump)","Classic psy drive — dip then swell"),
-        4: ("Lean & minimal",      "Thin, stripped, leaves room for bass"),
+        1: ("Sustained & full",  "Thick, present — dip-swell sustain"),
+        2: ("Tight & punchy",    "Snappy, controlled — fast dip-swell"),
+        3: ("Deep drive",        "Maximum movement — deep dip, high swell"),
+        4: ("Lean & open",       "Space for bass — shallow dip-swell"),
     }, default=1)
-    body_tbl = {1: (0.78, "smooth"), 2: (0.55, "punchy"),
-                3: (0.65, "double_bump"), 4: (0.38, "smooth")}
+    body_tbl = {1: (0.78, "sustained"), 2: (0.55, "punchy"),
+                3: (0.65, "deep_drive"), 4: (0.38, "lean")}
     answers["body_level"], answers["body_shape"] = body_tbl[bc]
 
     # ── 7. TAIL ──────────────────────────────────────────────
@@ -366,17 +377,15 @@ def run_questionnaire():
     }, default=2)
     answers["tail"] = {1: 0.15, 2: 0.50, 3: 0.85}[tc]
 
-    # ── 8. CLICK LAYER ───────────────────────────────────────
-    print_header("8. CLICK LAYER — Transient sample layer?")
-    cc = ask_choice("Add a click for attack definition?", {
-        1: ("None",    "Pure sine body only"),
-        2: ("Subtle",  "Soft, blended definition"),
-        3: ("Present", "Clear transient — good mix cut"),
-        4: ("Strong",  "Prominent attack — cuts through"),
-    }, default=3)
-    click_tbl = {1: (0.0, 0.0), 2: (0.30, 0.12),
-                 3: (0.60, 0.18), 4: (0.90, 0.25)}
-    answers["click_intensity"], answers["click_decay"] = click_tbl[cc]
+    # ── 8. TEXTURE & TRANSIENT LAYERS ─────────────────────────
+    print_header("8. TEXTURE & TRANSIENT LAYERS — Sample layers for character?")
+    cc = ask_choice("Do you want sample layers for character?", {
+        1: ("None",              "Pure sine only"),
+        2: ("Subtle texture",    "2 low-gain samples (-12 dB, -23 dB) for warmth"),
+        3: ("Defined transient", "1 sample at -6 dB for click definition"),
+        4: ("Full stack",        "Transient + texture layers combined"),
+    }, default=2)
+    answers["texture_mode"] = {1: "none", 2: "subtle", 3: "transient", 4: "full"}[cc]
 
     # ── 9. TRACK KEY (optional) ──────────────────────────────
     print_header("9. TRACK KEY (optional)")
@@ -439,7 +448,7 @@ def build_config(answers):
         },
         "limiter": {
             "enabled": True,
-            "threshold_db": 0.0,
+            "threshold_db": -4.0,
             "lookahead": 1.0,
             "release": 1.0,
         },
@@ -479,17 +488,17 @@ def build_config(answers):
         },
     }
 
-    # Click layer
-    if answers["click_intensity"] > 0:
-        click_nodes = generate_click_envelope(
-            answers["click_intensity"],
-            answers["click_decay"],
-        )
-        config["slots"].append({
-            "slot_number": 2,
+    # Texture / transient layers
+    texture_mode = answers.get("texture_mode", "none")
+
+    def _sample_slot(slot_num, gain_db, decay_pct):
+        """Create a sample texture slot with short amp envelope."""
+        env_nodes = generate_click_envelope(0.7, decay_pct)
+        return {
+            "slot_number": slot_num,
             "type": "sample",
             "type_value": 2.0,
-            "gain_db": round(0.5 + answers["click_intensity"], 1),
+            "gain_db": gain_db,
             "muted": False,
             "active": True,
             "pitch_envelope": {
@@ -502,11 +511,29 @@ def build_config(answers):
             },
             "amp_envelope": {
                 "max_length_ms": length,
-                "nodes": click_nodes,
+                "nodes": env_nodes,
                 "coarse_nodes": [],
             },
-        })
+        }
+
+    if texture_mode == "subtle":
+        # 2 low-gain texture samples for warmth/character
+        config["slots"].append(_sample_slot(2, -12.0, 0.20))
+        config["slots"].append(_sample_slot(3, -23.0, 0.15))
         config["fx_routing"]["insert2"]["osc2"] = True
+        config["fx_routing"]["insert2"]["osc3"] = True
+    elif texture_mode == "transient":
+        # 1 sample at -6 dB for click definition
+        config["slots"].append(_sample_slot(2, -6.0, 0.18))
+        config["fx_routing"]["insert2"]["osc2"] = True
+    elif texture_mode == "full":
+        # Transient + texture layers
+        config["slots"].append(_sample_slot(2, -6.0, 0.18))
+        config["slots"].append(_sample_slot(3, -12.0, 0.20))
+        config["slots"].append(_sample_slot(4, -23.0, 0.15))
+        config["fx_routing"]["insert2"]["osc2"] = True
+        config["fx_routing"]["insert2"]["osc3"] = True
+        config["fx_routing"]["insert2"]["osc4"] = True
 
     # Pad remaining slots to 5
     used = len(config["slots"])
@@ -533,13 +560,14 @@ def print_summary(answers, config):
     start_hz = round(pn[0]["y"] * 20000)
     end_hz   = round(pn[-1]["y"] * 20000)
 
-    shape_labels = {"smooth": "Smooth", "punchy": "Punchy", "double_bump": "Double-bump"}
+    shape_labels = {"sustained": "Sustained & full", "punchy": "Tight & punchy",
+                     "deep_drive": "Deep drive", "lean": "Lean & open"}
     body_lbl = shape_labels.get(answers["body_shape"], answers["body_shape"])
 
-    click_lbl = "None"
-    if answers["click_intensity"] > 0:
-        pct = round(answers["click_intensity"] * 100)
-        click_lbl = f"{pct}% intensity, {round(answers['click_decay']*100)}% decay"
+    texture_labels = {"none": "None", "subtle": "Subtle texture (-12/-23 dB)",
+                      "transient": "Defined transient (-6 dB)",
+                      "full": "Full stack (transient + texture)"}
+    texture_lbl = texture_labels.get(answers.get("texture_mode", "none"), "None")
 
     W = 40  # value column width
 
@@ -558,7 +586,7 @@ def print_summary(answers, config):
         row("Attack", f"{round(answers['attack']*100)}%"),
         row("Body",   f"{body_lbl}, {round(answers['body_level']*100)}% full"),
         row("Tail",   f"{round(answers['tail']*100)}% fade"),
-        row("Click",  click_lbl),
+        row("Texture", texture_lbl),
         row("Key",    answers.get('track_key') or 'Not set'),
         border, "",
     ]
@@ -587,28 +615,34 @@ def tweak_loop(answers):
             3: (f"Sweep speed   : {answers['sweep_speed']}", "0 = slow, 1 = fast"),
             4: (f"Attack        : {answers['attack']}", "0 = soft, 1 = sharp"),
             5: (f"Body level    : {answers['body_level']}", "0 = thin, 1 = full"),
-            6: (f"Body shape    : {answers['body_shape']}", "smooth / punchy / double_bump"),
+            6: (f"Body shape    : {answers['body_shape']}", "sustained / punchy / deep_drive / lean"),
             7: (f"Tail          : {answers['tail']}", "0 = quick cut, 1 = long ring"),
-            8: (f"Click intensity: {answers['click_intensity']}", "0 = none, 1 = max"),
+            8: (f"Texture       : {answers.get('texture_mode', 'none')}", "none / subtle / transient / full"),
             9: (f"Length        : {answers['length_ms']} ms", ""),
         })
 
         tweak_map = {
             1: ("pitch_start_hz", 2000, 16000),
-            2: ("pitch_end_hz",   100,  2000),
+            2: ("pitch_end_hz",   100,  2500),
             3: ("sweep_speed",    0.0,  1.0),
             4: ("attack",         0.0,  1.0),
             5: ("body_level",     0.0,  1.0),
             7: ("tail",           0.0,  1.0),
-            8: ("click_intensity",0.0,  1.0),
             9: ("length_ms",      80,   500),
         }
 
         if tc == 6:
             sc = ask_choice("Body shape?", {
-                1: ("smooth", ""), 2: ("punchy", ""), 3: ("double_bump", ""),
+                1: ("sustained", "Thick, present"), 2: ("punchy", "Snappy, controlled"),
+                3: ("deep_drive", "Maximum movement"), 4: ("lean", "Space for bass"),
             })
-            answers["body_shape"] = {1: "smooth", 2: "punchy", 3: "double_bump"}[sc]
+            answers["body_shape"] = {1: "sustained", 2: "punchy", 3: "deep_drive", 4: "lean"}[sc]
+        elif tc == 8:
+            sc = ask_choice("Texture mode?", {
+                1: ("none", "Pure sine only"), 2: ("subtle", "2 texture layers"),
+                3: ("transient", "1 click layer"), 4: ("full", "Transient + texture"),
+            })
+            answers["texture_mode"] = {1: "none", 2: "subtle", 3: "transient", 4: "full"}[sc]
         elif tc in tweak_map:
             key, lo, hi = tweak_map[tc]
             answers[key] = ask_number(f"New value for {key}?", lo, hi, answers[key])

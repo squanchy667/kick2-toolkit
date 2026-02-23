@@ -177,7 +177,7 @@ def main():
     q.add_argument('--curve', default='exponential', choices=['exponential', 'linear'])
     q.add_argument('--shape', default='punchy', choices=['punchy', 'sustain', 'short'])
     q.add_argument('--no-click', action='store_true', help='Disable click layer')
-    q.add_argument('--click-decay', type=int, default=50, help='Click decay %')
+    q.add_argument('--click-decay', type=int, default=50, help='Click decay %%')
     
     args = parser.parse_args()
     

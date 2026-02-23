@@ -38,7 +38,7 @@ Frequency (Hz)
 | **Full-On Psy** | 12-16 kHz | 1500-2000 Hz | 250-350ms | Aggressive, clicky, driving |
 | **Dark Psy** | 10-14 kHz | 800-1500 Hz | 200-300ms | Growling, distorted |
 | **Hi-Tech** | 14-18 kHz | 2000-3000 Hz | 150-200ms | Short, snappy, percussive |
-| **Progressive** | 6-10 kHz | 400-800 Hz | 200-350ms | Deep, round, melodic |
+| **Progressive** | 11-16 kHz | 1500-2500 Hz | 200-350ms | Deep, round, melodic |
 | **Techno** | 4-8 kHz | 40-60 Hz | 200-400ms | Deep sub, minimal click |
 | **House** | 2-6 kHz | 50-100 Hz | 150-300ms | Rounded, warm |
 
