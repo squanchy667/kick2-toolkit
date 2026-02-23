@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "source": "kick_questionnaire",
+    "vibe": "Deep & Hypnotic",
+    "bpm": 142,
+    "track_key": "F",
+    "generated": "2026-02-23T11:18:15.912073"
+  },
+  "master": {
+    "length_ms": 211,
+    "single_length_mode": true,
+    "output_gain_db": 0.0,
+    "output_gain_position": 1.0,
+    "pan": 0.0,
+    "tuning_semitones": 0.0,
+    "pitch_wheel_range": 7.0,
+    "processing_mode": 1.0,
+    "gate": 0.0
+  },
+  "limiter": {
+    "enabled": true,
+    "threshold_db": -0.1,
+    "lookahead": 1.0,
+    "release": 1.0
+  },
+  "slots": [
+    {
+      "slot_number": 1,
+      "type": "sine",
+      "type_value": 1.0,
+      "gain_db": 0.0,
+      "muted": false,
+      "active": true,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "semitone_offset": 0.0,
+        "range_max": 100.0,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 0.4,
+            "c": 0.0
+          },
+          {
+            "x": 0.0165,
+            "y": 0.0162,
+            "c": -0.4
+          },
+          {
+            "x": 0.0595,
+            "y": 0.00405,
+            "c": -0.2
+          },
+          {
+            "x": 0.265,
+            "y": 0.00259,
+            "c": -0.05
+          },
+          {
+            "x": 0.5,
+            "y": 0.00225,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 0.00225,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 211,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 0.05,
+            "c": 0.0
+          },
+          {
+            "x": 0.0034,
+            "y": 0.551,
+            "c": 0.0
+          },
+          {
+            "x": 0.0084,
+            "y": 0.919,
+            "c": 0.0
+          },
+          {
+            "x": 0.0374,
+            "y": 0.748,
+            "c": -0.63
+          },
+          {
+            "x": 0.12,
+            "y": 0.455,
+            "c": -0.47
+          },
+          {
+            "x": 0.2,
+            "y": 0.505,
+            "c": -0.47
+          },
+          {
+            "x": 0.32,
+            "y": 0.687,
+            "c": -0.33
+          },
+          {
+            "x": 0.42,
+            "y": 0.809,
+            "c": 0.0
+          },
+          {
+            "x": 0.52,
+            "y": 0.784,
+            "c": 0.02
+          },
+          {
+            "x": 0.625,
+            "y": 0.627,
+            "c": 0.04
+          },
+          {
+            "x": 0.755,
+            "y": 0.274,
+            "c": 0.04
+          },
+          {
+            "x": 0.95,
+            "y": 0.063,
+            "c": 0.04
+          },
+          {
+            "x": 0.98,
+            "y": 0.0,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 2,
+      "type": "sample",
+      "type_value": 2.0,
+      "gain_db": -12.0,
+      "muted": false,
+      "active": true,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "semitone_offset": 0.0,
+        "range_max": 100.0,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 1.0,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 211,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 0.85,
+            "c": 0.0
+          },
+          {
+            "x": 0.08,
+            "y": 0.425,
+            "c": 0.0
+          },
+          {
+            "x": 0.2,
+            "y": 0.0,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 3,
+      "type": "sample",
+      "type_value": 2.0,
+      "gain_db": -23.0,
+      "muted": false,
+      "active": true,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "semitone_offset": 0.0,
+        "range_max": 100.0,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 1.0,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 211,
+        "nodes": [
+          {
+            "x": 0.0,
+            "y": 0.85,
+            "c": 0.0
+          },
+          {
+            "x": 0.06,
+            "y": 0.425,
+            "c": 0.0
+          },
+          {
+            "x": 0.15,
+            "y": 0.0,
+            "c": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "c": 0.0
+          }
+        ],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 4,
+      "type": "off",
+      "type_value": 0.0,
+      "gain_db": 0.0,
+      "muted": false,
+      "active": false,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "nodes": [],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 211,
+        "nodes": [],
+        "coarse_nodes": []
+      }
+    },
+    {
+      "slot_number": 5,
+      "type": "off",
+      "type_value": 0.0,
+      "gain_db": 0.0,
+      "muted": true,
+      "active": false,
+      "pitch_envelope": {
+        "max_freq_hz": 20000,
+        "nodes": [],
+        "coarse_nodes": []
+      },
+      "amp_envelope": {
+        "max_length_ms": 211,
+        "nodes": [],
+        "coarse_nodes": []
+      }
+    }
+  ],
+  "fx_routing": {
+    "insert1": {
+      "osc1": true,
+      "osc2": false,
+      "osc3": false,
+      "osc4": false,
+      "osc5": false,
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    },
+    "insert2": {
+      "osc1": false,
+      "osc2": true,
+      "osc3": true,
+      "osc4": false,
+      "osc5": false,
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    },
+    "master_fx": {
+      "slot1_type": 0.0,
+      "slot1_gain": 0.0,
+      "slot2_type": 0.0,
+      "slot2_gain": 0.0
+    }
+  }
+}

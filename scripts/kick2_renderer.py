@@ -128,7 +128,7 @@ def synthesize_kick(config, sample_rate=44100):
     # Normalize
     peak = max(abs(s) for s in mix) if mix else 1.0
     if peak > 0:
-        mix = [s / peak * 0.95 for s in mix]
+        mix = [s / peak * 0.89 for s in mix]
     
     return mix
 
@@ -165,39 +165,64 @@ def synthesize_sine_slot(slot, num_samples, sample_rate):
 
 def synthesize_noise_slot(slot, num_samples, sample_rate):
     """
-    Synthesize noise/click layer shaped by amplitude envelope.
-    Since we don't have the original sample, we use shaped noise
-    as a reasonable approximation for the click transient.
+    Synthesize filtered noise for texture/click layers.
+    Uses low-pass filtered noise for a smoother, less harsh character.
     """
     ae = slot.get('amp_envelope', {})
     amp_nodes = ae.get('nodes', [])
-    
+
     amp_env = interpolate_envelope(amp_nodes, num_samples)
-    
-    # Generate noise (simple LCG for reproducibility)
+
     import random
     rng = random.Random(42)
-    
+
+    # Generate raw noise then low-pass filter for smooth texture
+    raw = [rng.uniform(-1, 1) for _ in range(num_samples)]
+
+    # Simple one-pole low-pass at ~4kHz for warmth
+    cutoff = 4000.0
+    rc = 1.0 / (2.0 * math.pi * cutoff)
+    dt = 1.0 / sample_rate
+    alpha = dt / (rc + dt)
+
     audio = [0.0] * num_samples
+    prev = 0.0
     for i in range(num_samples):
-        # Mix of noise and a short impulse for click character
-        noise = rng.uniform(-1, 1)
-        # High-pass character: difference of consecutive noise samples
-        if i > 0:
-            hp_noise = noise - audio[i-1] * 0.3
-        else:
-            hp_noise = noise
-        audio[i] = hp_noise * amp_env[i] * 0.5
-    
+        prev = prev + alpha * (raw[i] - prev)
+        audio[i] = prev * amp_env[i] * 0.3
+
     return audio
 
 
 def apply_limiter(samples, threshold, sample_rate):
-    """Simple brickwall limiter."""
+    """Soft-knee limiter with lookahead smoothing."""
     output = list(samples)
+    knee = 0.1  # soft knee width in linear
+    # Smoothing: ~1ms attack, ~10ms release
+    attack_coeff = math.exp(-1.0 / (0.001 * sample_rate))
+    release_coeff = math.exp(-1.0 / (0.010 * sample_rate))
+    gain_reduction = 1.0
+
     for i in range(len(output)):
-        if abs(output[i]) > threshold:
-            output[i] = threshold * (1 if output[i] > 0 else -1)
+        level = abs(output[i])
+        if level > threshold:
+            # Soft-knee: gradual compression above threshold
+            overshoot = level / threshold
+            target_gain = 1.0 / overshoot
+        elif level > threshold - knee:
+            # Knee region: blend between unity and compression
+            blend = (level - (threshold - knee)) / knee
+            target_gain = 1.0 - blend * (1.0 - threshold / max(level, 0.0001))
+        else:
+            target_gain = 1.0
+
+        # Smooth gain changes
+        if target_gain < gain_reduction:
+            gain_reduction = attack_coeff * gain_reduction + (1 - attack_coeff) * target_gain
+        else:
+            gain_reduction = release_coeff * gain_reduction + (1 - release_coeff) * target_gain
+
+        output[i] *= gain_reduction
     return output
 
 

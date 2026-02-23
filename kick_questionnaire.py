@@ -65,8 +65,8 @@ VIBES = {
     1: {
         "name": "Deep & Hypnotic",
         "desc": "Low, meditative groove. Smooth sweep, deep body, subtle movement.",
-        "pitch_start_hz": 14000,
-        "pitch_end_hz": 2000,
+        "pitch_start_hz": 8000,
+        "pitch_end_hz": 45,
         "sweep_speed": 0.35,       # 0 = slow, 1 = fast
         "default_attack": 0.40,
         "default_body": 0.75,
@@ -78,8 +78,8 @@ VIBES = {
     2: {
         "name": "Groovy & Punchy",
         "desc": "Tight, rhythmic energy. Snappy attack, controlled body.",
-        "pitch_start_hz": 13000,
-        "pitch_end_hz": 1800,
+        "pitch_start_hz": 10000,
+        "pitch_end_hz": 50,
         "sweep_speed": 0.55,
         "default_attack": 0.70,
         "default_body": 0.55,
@@ -91,8 +91,8 @@ VIBES = {
     3: {
         "name": "Melodic & Warm",
         "desc": "Round, musical quality. Gentle sweep, warm sustain.",
-        "pitch_start_hz": 11000,
-        "pitch_end_hz": 1500,
+        "pitch_start_hz": 6000,
+        "pitch_end_hz": 45,
         "sweep_speed": 0.40,
         "default_attack": 0.50,
         "default_body": 0.70,
@@ -104,8 +104,8 @@ VIBES = {
     4: {
         "name": "Driving & Energetic",
         "desc": "Forward momentum. Fast sweep, punchy body, strong presence.",
-        "pitch_start_hz": 16000,
-        "pitch_end_hz": 2500,
+        "pitch_start_hz": 12000,
+        "pitch_end_hz": 55,
         "sweep_speed": 0.65,
         "default_attack": 0.80,
         "default_body": 0.60,
@@ -183,40 +183,39 @@ def generate_pitch_envelope(start_hz, end_hz, sweep_speed, max_hz=20000):
     """
     Create pitch-envelope nodes from musical intent.
 
-    Shape: fast drop → plateau in "singing zone" → gradual settle.
-    Based on analysis of real progressive psy presets (KHAZ Hypnotic series).
+    Shape: fast drop → body tone → gradual settle to fundamental.
+    The renderer uses freq = y * max_hz linearly, so end_hz must be the
+    actual bass fundamental (~40-55 Hz) to sound like a kick.
 
-    start_hz   : initial click/transient frequency  (11 000 – 16 000)
-    end_hz     : settling body frequency             (1 500 – 2 500)
+    start_hz   : initial click/transient frequency  (6 000 – 12 000)
+    end_hz     : fundamental bass frequency          (40 – 80)
     sweep_speed: 0.0 = slow gradual, 1.0 = fast snappy
     """
     y_s = start_hz / max_hz
     y_e = end_hz / max_hz
 
-    # Plateau sits at ~38-42% of start, varies with sweep speed
-    plateau_ratio = 0.40 - sweep_speed * 0.04        # 0.40 … 0.36
-    y_plateau = y_s * plateau_ratio
+    # Body tone sits LOW — 60-120 Hz, not mid-range
+    # This is what gives the kick weight without sounding like a laser
+    body_hz = 60 + sweep_speed * 60                    # 60 … 120 Hz
+    y_body = body_hz / max_hz
 
-    # Fast drop target — slightly above plateau
-    drop_ratio = plateau_ratio + 0.02                 # 0.42 … 0.38
-    y_drop = y_s * drop_ratio
+    # Drop through mid-range FAST — just a brief pass, not a plateau
+    x_click_end = 0.01 + (1.0 - sweep_speed) * 0.01   # 0.01 … 0.02
+    y_mid = (body_hz * 4) / max_hz                     # brief mid pass ~240-480 Hz
 
-    # Drop position: faster sweep → earlier drop
-    x_drop = 0.08 - sweep_speed * 0.04               # 0.08 … 0.04
+    # Arrive at body tone quickly
+    x_body = 0.04 + (1.0 - sweep_speed) * 0.03        # 0.04 … 0.07
 
-    # Plateau end: faster sweep → shorter plateau
-    x_plateau = 0.35 - sweep_speed * 0.10             # 0.35 … 0.25
-
-    # Settle zone
-    x_settle = 0.82
-    y_settle = y_e * 1.1
+    # Settle to fundamental — tight, controlled
+    x_settle = 0.20 + (1.0 - sweep_speed) * 0.10      # 0.20 … 0.30
 
     nodes = [
-        {"x": 0.0,                    "y": round(y_s, 5),       "c": 0.0},
-        {"x": round(x_drop, 4),       "y": round(y_drop, 5),    "c": -0.23},
-        {"x": round(x_plateau, 4),    "y": round(y_plateau, 5), "c": 0.0},
-        {"x": x_settle,               "y": round(y_settle, 5),  "c": -0.11},
-        {"x": 1.0,                    "y": round(y_e, 5),       "c": -0.03},
+        {"x": 0.0,                  "y": round(y_s, 5),      "c": 0.0},
+        {"x": round(x_click_end, 4),"y": round(y_mid, 5),    "c": -0.40},
+        {"x": round(x_body, 4),     "y": round(y_body, 5),   "c": -0.20},
+        {"x": round(x_settle, 4),   "y": round(y_e * 1.15, 5), "c": -0.05},
+        {"x": 0.50,                 "y": round(y_e, 5),      "c": 0.0},
+        {"x": 1.0,                  "y": round(y_e, 5),      "c": 0.0},
     ]
     return nodes
 
@@ -336,12 +335,12 @@ def run_questionnaire():
     # ── 4. PITCH DEPTH ───────────────────────────────────────
     print_header("4. PITCH DEPTH — How deep does the sweep go?")
     dc = ask_choice("Where should the pitch settle?", {
-        1: ("Very deep",  "Lower body (~1200-1500 Hz) — heavy, underground"),
-        2: ("Deep",       "Warm body (~1500-1800 Hz) — round, full"),
-        3: ("Medium",     "Balanced (~1800-2200 Hz) — versatile, present"),
-        4: ("Bright",     "Upper body (~2200-2800 Hz) — bright, cutting"),
+        1: ("Very deep",  "Low sub (~35 Hz) — heavy, underground"),
+        2: ("Deep",       "Sub bass (~45 Hz) — round, full"),
+        3: ("Medium",     "Bass (~55 Hz) — versatile, present"),
+        4: ("Bright",     "Upper bass (~65 Hz) — bright, cutting"),
     }, default=2)
-    depth_mul = {1: 0.75, 2: 0.90, 3: 1.10, 4: 1.30}
+    depth_mul = {1: 0.80, 2: 1.00, 3: 1.25, 4: 1.50}
     answers["pitch_end_hz"]   = round(vibe["pitch_end_hz"] * depth_mul[dc])
     answers["pitch_start_hz"] = vibe["pitch_start_hz"]
     answers["sweep_speed"]    = vibe["sweep_speed"]
@@ -448,7 +447,7 @@ def build_config(answers):
         },
         "limiter": {
             "enabled": True,
-            "threshold_db": -4.0,
+            "threshold_db": -0.1,
             "lookahead": 1.0,
             "release": 1.0,
         },
@@ -457,7 +456,7 @@ def build_config(answers):
                 "slot_number": 1,
                 "type": "sine",
                 "type_value": 1.0,
-                "gain_db": 1.2,
+                "gain_db": 0.0,
                 "muted": False,
                 "active": True,
                 "pitch_envelope": {

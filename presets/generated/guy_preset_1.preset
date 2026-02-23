@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kick2PresetFile pluginVersion="1.5.3">
+  <Params>
+    <PARAM id="masterLength" value="211"/>
+    <PARAM id="singleLengthMode" value="1.0"/>
+    <PARAM id="outGain" value="0.0"/>
+    <PARAM id="outGainPosition" value="1.0"/>
+    <PARAM id="masterPan" value="0.0"/>
+    <PARAM id="tuning" value="0.0"/>
+    <PARAM id="pitchWheelRange" value="7.0"/>
+    <PARAM id="processingMode" value="1.0"/>
+    <PARAM id="gate" value="0.0"/>
+    <PARAM id="Lim_Enable" value="1.0"/>
+    <PARAM id="Lim_Threshold" value="-0.1"/>
+    <PARAM id="Lim_Lookahead" value="1.0"/>
+    <PARAM id="Lim_Release" value="1.0"/>
+    <PARAM id="Slot1Type" value="1.0"/>
+    <PARAM id="Slot1Gain" value="0.0"/>
+    <PARAM id="Slot1PitchEnvMax" value="20000"/>
+    <PARAM id="Slot1PitchEnvRangeMax" value="100.0"/>
+    <PARAM id="Slot1PitchSemi" value="0.0"/>
+    <PARAM id="Slot1PitchNode1_x" value="0.0"/>
+    <PARAM id="Slot1PitchNode1_y" value="0.4"/>
+    <PARAM id="Slot1PitchNode2_x" value="0.0165"/>
+    <PARAM id="Slot1PitchNode2_y" value="0.0162"/>
+    <PARAM id="Slot1PitchNode3_x" value="0.0595"/>
+    <PARAM id="Slot1PitchNode3_y" value="0.00405"/>
+    <PARAM id="Slot1PitchNode4_x" value="0.265"/>
+    <PARAM id="Slot1PitchNode4_y" value="0.00259"/>
+    <PARAM id="Slot1PitchNode5_x" value="0.5"/>
+    <PARAM id="Slot1PitchNode5_y" value="0.00225"/>
+    <PARAM id="Slot1PitchNode6_x" value="1.0"/>
+    <PARAM id="Slot1PitchNode6_y" value="0.00225"/>
+    <PARAM id="Slot1PitchNode7_x" value="1.0"/>
+    <PARAM id="Slot1PitchNode7_y" value="0.09"/>
+    <PARAM id="Slot1PitchNode8_x" value="1.0"/>
+    <PARAM id="Slot1PitchNode8_y" value="0.09"/>
+    <PARAM id="Slot1AmpEnvMaxLen" value="211"/>
+    <PARAM id="Slot1AmpNode1_x" value="0.0"/>
+    <PARAM id="Slot1AmpNode1_y" value="0.05"/>
+    <PARAM id="Slot1AmpNode2_x" value="0.0034"/>
+    <PARAM id="Slot1AmpNode2_y" value="0.551"/>
+    <PARAM id="Slot1AmpNode3_x" value="0.0084"/>
+    <PARAM id="Slot1AmpNode3_y" value="0.919"/>
+    <PARAM id="Slot1AmpNode4_x" value="0.0374"/>
+    <PARAM id="Slot1AmpNode4_y" value="0.748"/>
+    <PARAM id="Slot1AmpNode5_x" value="0.12"/>
+    <PARAM id="Slot1AmpNode5_y" value="0.455"/>
+    <PARAM id="Slot1AmpNode6_x" value="0.2"/>
+    <PARAM id="Slot1AmpNode6_y" value="0.505"/>
+    <PARAM id="Slot1AmpNode7_x" value="0.32"/>
+    <PARAM id="Slot1AmpNode7_y" value="0.687"/>
+    <PARAM id="Slot1AmpNode8_x" value="0.42"/>
+    <PARAM id="Slot1AmpNode8_y" value="0.809"/>
+    <PARAM id="Slot2Type" value="2.0"/>
+    <PARAM id="Slot2Gain" value="-12.0"/>
+    <PARAM id="Slot2PitchEnvMax" value="20000"/>
+    <PARAM id="Slot2PitchEnvRangeMax" value="100.0"/>
+    <PARAM id="Slot2PitchSemi" value="0.0"/>
+    <PARAM id="Slot2PitchNode1_x" value="0.0"/>
+    <PARAM id="Slot2PitchNode1_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode2_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode2_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode3_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode3_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode4_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode4_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode5_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode5_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode6_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode6_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode7_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode7_y" value="1.0"/>
+    <PARAM id="Slot2PitchNode8_x" value="1.0"/>
+    <PARAM id="Slot2PitchNode8_y" value="1.0"/>
+    <PARAM id="Slot2AmpEnvMaxLen" value="211"/>
+    <PARAM id="Slot2AmpNode1_x" value="0.0"/>
+    <PARAM id="Slot2AmpNode1_y" value="0.85"/>
+    <PARAM id="Slot2AmpNode2_x" value="0.08"/>
+    <PARAM id="Slot2AmpNode2_y" value="0.425"/>
+    <PARAM id="Slot2AmpNode3_x" value="0.2"/>
+    <PARAM id="Slot2AmpNode3_y" value="0.0"/>
+    <PARAM id="Slot2AmpNode4_x" value="1.0"/>
+    <PARAM id="Slot2AmpNode4_y" value="0.0"/>
+    <PARAM id="Slot2AmpNode5_x" value="1.0"/>
+    <PARAM id="Slot2AmpNode5_y" value="0.0"/>
+    <PARAM id="Slot2AmpNode6_x" value="1.0"/>
+    <PARAM id="Slot2AmpNode6_y" value="0.0"/>
+    <PARAM id="Slot2AmpNode7_x" value="1.0"/>
+    <PARAM id="Slot2AmpNode7_y" value="0.0"/>
+    <PARAM id="Slot2AmpNode8_x" value="1.0"/>
+    <PARAM id="Slot2AmpNode8_y" value="0.0"/>
+    <PARAM id="Slot3Type" value="2.0"/>
+    <PARAM id="Slot3Gain" value="-23.0"/>
+    <PARAM id="Slot3PitchEnvMax" value="20000"/>
+    <PARAM id="Slot3PitchEnvRangeMax" value="100.0"/>
+    <PARAM id="Slot3PitchSemi" value="0.0"/>
+    <PARAM id="Slot3PitchNode1_x" value="0.0"/>
+    <PARAM id="Slot3PitchNode1_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode2_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode2_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode3_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode3_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode4_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode4_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode5_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode5_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode6_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode6_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode7_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode7_y" value="1.0"/>
+    <PARAM id="Slot3PitchNode8_x" value="1.0"/>
+    <PARAM id="Slot3PitchNode8_y" value="1.0"/>
+    <PARAM id="Slot3AmpEnvMaxLen" value="211"/>
+    <PARAM id="Slot3AmpNode1_x" value="0.0"/>
+    <PARAM id="Slot3AmpNode1_y" value="0.85"/>
+    <PARAM id="Slot3AmpNode2_x" value="0.06"/>
+    <PARAM id="Slot3AmpNode2_y" value="0.425"/>
+    <PARAM id="Slot3AmpNode3_x" value="0.15"/>
+    <PARAM id="Slot3AmpNode3_y" value="0.0"/>
+    <PARAM id="Slot3AmpNode4_x" value="1.0"/>
+    <PARAM id="Slot3AmpNode4_y" value="0.0"/>
+    <PARAM id="Slot3AmpNode5_x" value="1.0"/>
+    <PARAM id="Slot3AmpNode5_y" value="0.0"/>
+    <PARAM id="Slot3AmpNode6_x" value="1.0"/>
+    <PARAM id="Slot3AmpNode6_y" value="0.0"/>
+    <PARAM id="Slot3AmpNode7_x" value="1.0"/>
+    <PARAM id="Slot3AmpNode7_y" value="0.0"/>
+    <PARAM id="Slot3AmpNode8_x" value="1.0"/>
+    <PARAM id="Slot3AmpNode8_y" value="0.0"/>
+    <PARAM id="Slot4Type" value="0.0"/>
+    <PARAM id="Slot4Gain" value="0.0"/>
+    <PARAM id="Slot4PitchEnvMax" value="20000"/>
+    <PARAM id="Slot4PitchEnvRangeMax" value="100.0"/>
+    <PARAM id="Slot4PitchSemi" value="0.0"/>
+    <PARAM id="Slot4PitchNode1_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode1_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode2_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode2_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode3_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode3_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode4_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode4_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode5_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode5_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode6_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode6_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode7_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode7_y" value="0.09"/>
+    <PARAM id="Slot4PitchNode8_x" value="1.0"/>
+    <PARAM id="Slot4PitchNode8_y" value="0.09"/>
+    <PARAM id="Slot4AmpEnvMaxLen" value="211"/>
+    <PARAM id="Slot4AmpNode1_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode1_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode2_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode2_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode3_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode3_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode4_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode4_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode5_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode5_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode6_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode6_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode7_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode7_y" value="0.0"/>
+    <PARAM id="Slot4AmpNode8_x" value="1.0"/>
+    <PARAM id="Slot4AmpNode8_y" value="0.0"/>
+    <PARAM id="Slot5Type" value="0.0"/>
+    <PARAM id="Slot5Gain" value="0.0"/>
+    <PARAM id="Slot5Mute" value="1.0"/>
+    <PARAM id="Slot5PitchEnvMax" value="20000"/>
+    <PARAM id="Slot5PitchEnvRangeMax" value="100.0"/>
+    <PARAM id="Slot5PitchSemi" value="0.0"/>
+    <PARAM id="Slot5PitchNode1_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode1_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode2_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode2_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode3_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode3_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode4_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode4_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode5_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode5_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode6_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode6_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode7_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode7_y" value="0.09"/>
+    <PARAM id="Slot5PitchNode8_x" value="1.0"/>
+    <PARAM id="Slot5PitchNode8_y" value="0.09"/>
+    <PARAM id="Slot5AmpEnvMaxLen" value="211"/>
+    <PARAM id="Slot5AmpNode1_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode1_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode2_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode2_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode3_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode3_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode4_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode4_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode5_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode5_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode6_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode6_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode7_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode7_y" value="0.0"/>
+    <PARAM id="Slot5AmpNode8_x" value="1.0"/>
+    <PARAM id="Slot5AmpNode8_y" value="0.0"/>
+    <PARAM id="FXInsert1Osc1Routed" value="1.0"/>
+    <PARAM id="FXInsert1Osc2Routed" value="0.0"/>
+    <PARAM id="FXInsert1Osc3Routed" value="0.0"/>
+    <PARAM id="FXInsert1Osc4Routed" value="0.0"/>
+    <PARAM id="FXInsert1Osc5Routed" value="0.0"/>
+    <PARAM id="FXInsert1Slot1Type" value="0.0"/>
+    <PARAM id="FXInsert1Slot1Gain" value="0.0"/>
+    <PARAM id="FXInsert1Slot2Type" value="0.0"/>
+    <PARAM id="FXInsert1Slot2Gain" value="0.0"/>
+    <PARAM id="FXInsert2Osc1Routed" value="0.0"/>
+    <PARAM id="FXInsert2Osc2Routed" value="1.0"/>
+    <PARAM id="FXInsert2Osc3Routed" value="1.0"/>
+    <PARAM id="FXInsert2Osc4Routed" value="0.0"/>
+    <PARAM id="FXInsert2Osc5Routed" value="0.0"/>
+    <PARAM id="FXInsert2Slot1Type" value="0.0"/>
+    <PARAM id="FXInsert2Slot1Gain" value="0.0"/>
+    <PARAM id="FXInsert2Slot2Type" value="0.0"/>
+    <PARAM id="FXInsert2Slot2Gain" value="0.0"/>
+    <PARAM id="MstrFXSlot1Type" value="0.0"/>
+    <PARAM id="MstrFXSlot1Gain" value="0.0"/>
+    <PARAM id="MstrFXSlot2Type" value="0.0"/>
+    <PARAM id="MstrFXSlot2Gain" value="0.0"/>
+  </Params>
+  <EnvelopeData>
+    <Envelope id="Slot0_PitchEnvelope">
+      <Node x="0.0000000000000000" y="0.4000000000000000" c="0.0000000000000000"/>
+      <Node x="0.0165000000000000" y="0.0162000000000000" c="-0.4000000000000000"/>
+      <Node x="0.0595000000000000" y="0.0040500000000000" c="-0.2000000000000000"/>
+      <Node x="0.2650000000000000" y="0.0025900000000000" c="-0.0500000000000000"/>
+      <Node x="0.5000000000000000" y="0.0022500000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="0.0022500000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot0_AmpEnvelope">
+      <Node x="0.0000000000000000" y="0.0500000000000000" c="0.0000000000000000"/>
+      <Node x="0.0034000000000000" y="0.5510000000000000" c="0.0000000000000000"/>
+      <Node x="0.0084000000000000" y="0.9190000000000000" c="0.0000000000000000"/>
+      <Node x="0.0374000000000000" y="0.7480000000000000" c="-0.6300000000000000"/>
+      <Node x="0.1200000000000000" y="0.4550000000000000" c="-0.4700000000000000"/>
+      <Node x="0.2000000000000000" y="0.5050000000000000" c="-0.4700000000000000"/>
+      <Node x="0.3200000000000000" y="0.6870000000000001" c="-0.3300000000000000"/>
+      <Node x="0.4200000000000000" y="0.8090000000000001" c="0.0000000000000000"/>
+      <Node x="0.5200000000000000" y="0.7840000000000000" c="0.0200000000000000"/>
+      <Node x="0.6250000000000000" y="0.6270000000000000" c="0.0400000000000000"/>
+      <Node x="0.7550000000000000" y="0.2740000000000000" c="0.0400000000000000"/>
+      <Node x="0.9500000000000000" y="0.0630000000000000" c="0.0400000000000000"/>
+      <Node x="0.9800000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot1_PitchEnvelope">
+      <Node x="0.0000000000000000" y="1.0000000000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="1.0000000000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot1_AmpEnvelope">
+      <Node x="0.0000000000000000" y="0.8500000000000000" c="0.0000000000000000"/>
+      <Node x="0.0800000000000000" y="0.4250000000000000" c="0.0000000000000000"/>
+      <Node x="0.2000000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot2_PitchEnvelope">
+      <Node x="0.0000000000000000" y="1.0000000000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="1.0000000000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot2_AmpEnvelope">
+      <Node x="0.0000000000000000" y="0.8500000000000000" c="0.0000000000000000"/>
+      <Node x="0.0600000000000000" y="0.4250000000000000" c="0.0000000000000000"/>
+      <Node x="0.1500000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+      <Node x="1.0000000000000000" y="0.0000000000000000" c="0.0000000000000000"/>
+    </Envelope>
+    <Envelope id="Slot3_PitchEnvelope"/>
+    <Envelope id="Slot3_AmpEnvelope"/>
+    <Envelope id="Slot4_PitchEnvelope"/>
+    <Envelope id="Slot4_AmpEnvelope"/>
+  </EnvelopeData>
+</Kick2PresetFile>

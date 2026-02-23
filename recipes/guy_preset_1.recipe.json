@@ -1,0 +1,15 @@
+{
+  "vibe": 1,
+  "bpm": 142,
+  "length_ms": 211,
+  "pitch_start_hz": 8000,
+  "pitch_end_hz": 45,
+  "sweep_speed": 0.35,
+  "attack": 0.55,
+  "body_level": 0.78,
+  "body_shape": "sustained",
+  "tail": 0.5,
+  "texture_mode": "subtle",
+  "track_key": "F",
+  "generated": "2026-02-23T11:18:15.961428"
+}
