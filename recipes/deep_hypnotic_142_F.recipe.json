@@ -1,0 +1,16 @@
+{
+  "vibe": 1,
+  "bpm": 142,
+  "length_ms": 245,
+  "pitch_end_hz": 460,
+  "pitch_start_hz": 6000,
+  "sweep_speed": 0.35,
+  "attack": 0.55,
+  "body_level": 0.78,
+  "body_shape": "smooth",
+  "tail": 0.5,
+  "click_intensity": 0.0,
+  "click_decay": 0.0,
+  "track_key": "F",
+  "generated": "2026-02-21T21:14:56.731945"
+}

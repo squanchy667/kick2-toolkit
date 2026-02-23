@@ -1,0 +1,3209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kick3>
+  
+  
+  <PARAMS>
+    
+    
+    <PARAM id="EQ_Enable" value="1.0"/>
+    
+    
+    <PARAM id="EQ_band1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="EQ_band1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="EQ_band1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="EQ_band1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="EQ_band2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="EQ_band2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="EQ_band2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="EQ_band2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="EQ_band3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="EQ_band3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="EQ_band3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="EQ_band3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="EQ_band4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="EQ_band4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="EQ_band4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="EQ_band4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Osc1Routed" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Osc2Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Osc3Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Osc4Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Osc5Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompRatio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot1Enabled" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="FXInsert1Slot1MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1ProcPos" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot1WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompRatio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert1Slot2Enabled" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="FXInsert1Slot2MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2ProcPos" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert1Slot2WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Osc1Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Osc2Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Osc3Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Osc4Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Osc5Routed" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompRatio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot1Enabled" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="FXInsert2Slot1MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1ProcPos" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot1WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompRatio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="FXInsert2Slot2Enabled" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2Gain" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="FXInsert2Slot2MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2ProcPos" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="FXInsert2Slot2WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="Lim_Enable" value="1.0"/>
+    
+    
+    <PARAM id="Lim_Lookahead" value="1.0"/>
+    
+    
+    <PARAM id="Lim_Release" value="1.0"/>
+    
+    
+    <PARAM id="Lim_Threshold" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompRatio" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot1Enabled" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="MstrFXSlot1MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1ProcPos" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot1WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BitCrushDepth" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BitCrushDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BitCrushMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BitCrushRate" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BitCrushTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassAmount" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassRes" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassShape" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2BrassTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ClipDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ClipMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ClipParam3" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ClipPreHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ClipTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompAttack" value="1.00000011920929"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompEnable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompMakeUp" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompRatio" value="2.156328439712524"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompRelease" value="200.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CompThreshold" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ConvoHighCut" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ConvoLowCut" value="10.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ConvoMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxComplex" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxFeedback" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxResonance" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2CplxTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2DriveDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband1_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband1_Freq" value="50.00000762939453"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband1_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband1_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband2_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband2_Freq" value="200.0000610351562"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband2_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband2_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband3_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband3_Freq" value="999.9999389648438"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband3_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband3_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband4_Enable" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband4_Freq" value="5000.0009765625"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband4_Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2EQband4_Q" value="0.7070000171661377"/>
+    
+    
+    <PARAM id="MstrFXSlot2Enabled" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2Gain" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2MultiFiltFreq" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2MultiFiltQ" value="0.7070000767707825"/>
+    
+    
+    <PARAM id="MstrFXSlot2MultiFiltType" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2ProcPos" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModDiode" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModRate" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModRes" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2RingModTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76attackTime" value="4.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76gainsLink" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76inputGain" value="-36.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76mixRatio" value="100.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76outputGain" value="-36.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76ratio" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SA76releaseTime" value="4.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2SelectedFX" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayFbk" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayFreeT" value="250.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayHP" value="20.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayLP" value="20000.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayOffset" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelaySync" value="1.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelaySyncT" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDelayWidth" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeLowpass" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeNoiseLevel" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapeTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TapepostLPSFilter" value="100.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TubeDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TubeMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TubeTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2TubeTubeType" value="2.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2WaveDrive" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2WaveMix" value="50.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2WavePreHP" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2WaveTone" value="0.0"/>
+    
+    
+    <PARAM id="MstrFXSlot2WaveWaveShapeType" value="0.0"/>
+    
+    
+    <PARAM id="SideChainTrigActive" value="0.0"/>
+    
+    
+    <PARAM id="SideChainTrigAttack" value="0.00009999999747378752"/>
+    
+    
+    <PARAM id="SideChainTrigHPFreq" value="20.0"/>
+    
+    
+    <PARAM id="SideChainTrigHold" value="0.1000000014901161"/>
+    
+    
+    <PARAM id="SideChainTrigLPFreq" value="20000.0"/>
+    
+    
+    <PARAM id="SideChainTrigNoteOffThresh" value="18.0"/>
+    
+    
+    <PARAM id="SideChainTrigNoteOnThresh" value="-1.311302185058594e-6"/>
+    
+    
+    <PARAM id="SideChainTrigRelease" value="0.199999988079071"/>
+    
+    
+    <PARAM id="SideChainTrigRetrigRetThresh" value="0.0"/>
+    
+    
+    <PARAM id="Slot1AmpEnvMaxLen" value="245"/>
+    
+    
+    <PARAM id="Slot1AmpNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot1AmpNode1_y" value="0.05"/>
+    
+    
+    <PARAM id="Slot1AmpNode2_x" value="0.0034"/>
+    
+    
+    <PARAM id="Slot1AmpNode2_y" value="0.551"/>
+    
+    
+    <PARAM id="Slot1AmpNode3_x" value="0.0084"/>
+    
+    
+    <PARAM id="Slot1AmpNode3_y" value="0.919"/>
+    
+    
+    <PARAM id="Slot1AmpNode4_x" value="0.0374"/>
+    
+    
+    <PARAM id="Slot1AmpNode4_y" value="0.748"/>
+    
+    
+    <PARAM id="Slot1AmpNode5_x" value="0.1"/>
+    
+    
+    <PARAM id="Slot1AmpNode5_y" value="0.613"/>
+    
+    
+    <PARAM id="Slot1AmpNode6_x" value="0.22"/>
+    
+    
+    <PARAM id="Slot1AmpNode6_y" value="0.669"/>
+    
+    
+    <PARAM id="Slot1AmpNode7_x" value="0.38"/>
+    
+    
+    <PARAM id="Slot1AmpNode7_y" value="0.696"/>
+    
+    
+    <PARAM id="Slot1AmpNode8_x" value="0.52"/>
+    
+    
+    <PARAM id="Slot1AmpNode8_y" value="0.676"/>
+    
+    
+    <PARAM id="Slot1EndPoint" value="100.0"/>
+    
+    
+    <PARAM id="Slot1Gain" value="1.2"/>
+    
+    
+    <PARAM id="Slot1HarmoGain" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Keytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Loop" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Mute" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Pan" value="0.0"/>
+    
+    
+    <PARAM id="Slot1PhaseInvert" value="0.0"/>
+    
+    
+    <PARAM id="Slot1PhaseLockOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot1PhaseOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot1PitchEnvMax" value="20000"/>
+    
+    
+    <PARAM id="Slot1PitchEnvRangeMax" value="100.0"/>
+    
+    
+    <PARAM id="Slot1PitchNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot1PitchNode1_y" value="0.3"/>
+    
+    
+    <PARAM id="Slot1PitchNode2_x" value="0.1429"/>
+    
+    
+    <PARAM id="Slot1PitchNode2_y" value="0.16353"/>
+    
+    
+    <PARAM id="Slot1PitchNode3_x" value="0.2857"/>
+    
+    
+    <PARAM id="Slot1PitchNode3_y" value="0.0943"/>
+    
+    
+    <PARAM id="Slot1PitchNode4_x" value="0.4286"/>
+    
+    
+    <PARAM id="Slot1PitchNode4_y" value="0.05917"/>
+    
+    
+    <PARAM id="Slot1PitchNode5_x" value="0.5714"/>
+    
+    
+    <PARAM id="Slot1PitchNode5_y" value="0.04135"/>
+    
+    
+    <PARAM id="Slot1PitchNode6_x" value="0.7143"/>
+    
+    
+    <PARAM id="Slot1PitchNode6_y" value="0.03231"/>
+    
+    
+    <PARAM id="Slot1PitchNode7_x" value="0.8571"/>
+    
+    
+    <PARAM id="Slot1PitchNode7_y" value="0.02772"/>
+    
+    
+    <PARAM id="Slot1PitchNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot1PitchNode8_y" value="0.0254"/>
+    
+    
+    <PARAM id="Slot1PitchSemi" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SelectiveKeytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Solo" value="0.0"/>
+    
+    
+    <PARAM id="Slot1StartPoint" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay01" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay02" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay03" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay04" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay05" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay06" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay07" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubDecay08" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio01" value="1.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio02" value="2.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio03" value="3.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio04" value="4.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio05" value="5.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio06" value="6.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio07" value="7.0"/>
+    
+    
+    <PARAM id="Slot1SubFreqRatio08" value="7.999999523162842"/>
+    
+    
+    <PARAM id="Slot1SubHarmo01" value="100.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo02" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo03" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo04" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo05" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo06" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo07" value="0.0"/>
+    
+    
+    <PARAM id="Slot1SubHarmo08" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Tone" value="0.0"/>
+    
+    
+    <PARAM id="Slot1Type" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpEnvMaxLen" value="245"/>
+    
+    
+    <PARAM id="Slot2AmpNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode2_x" value="0.4913968741893768"/>
+    
+    
+    <PARAM id="Slot2AmpNode2_y" value="0.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode3_y" value="0.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2AmpNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2EndPoint" value="100.0"/>
+    
+    
+    <PARAM id="Slot2Gain" value="0.0"/>
+    
+    
+    <PARAM id="Slot2HarmoGain" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Keytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Loop" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Mute" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Pan" value="0.0"/>
+    
+    
+    <PARAM id="Slot2PhaseInvert" value="0.0"/>
+    
+    
+    <PARAM id="Slot2PhaseLockOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot2PhaseOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot2PitchEnvMax" value="20000"/>
+    
+    
+    <PARAM id="Slot2PitchEnvRangeMax" value="100.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot2PitchSemi" value="-2.682209014892578e-7"/>
+    
+    
+    <PARAM id="Slot2SelectiveKeytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Solo" value="0.0"/>
+    
+    
+    <PARAM id="Slot2StartPoint" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay01" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay02" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay03" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay04" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay05" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay06" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay07" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubDecay08" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio01" value="1.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio02" value="2.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio03" value="3.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio04" value="4.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio05" value="5.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio06" value="6.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio07" value="7.0"/>
+    
+    
+    <PARAM id="Slot2SubFreqRatio08" value="7.999999523162842"/>
+    
+    
+    <PARAM id="Slot2SubHarmo01" value="100.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo02" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo03" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo04" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo05" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo06" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo07" value="0.0"/>
+    
+    
+    <PARAM id="Slot2SubHarmo08" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Tone" value="0.0"/>
+    
+    
+    <PARAM id="Slot2Type" value="0.0"/>
+    
+    
+    <PARAM id="Slot3AmpEnvMaxLen" value="245"/>
+    
+    
+    <PARAM id="Slot3AmpNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3AmpNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3EndPoint" value="100.0"/>
+    
+    
+    <PARAM id="Slot3Gain" value="0.0"/>
+    
+    
+    <PARAM id="Slot3HarmoGain" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Keytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Loop" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Mute" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Pan" value="0.0"/>
+    
+    
+    <PARAM id="Slot3PhaseInvert" value="0.0"/>
+    
+    
+    <PARAM id="Slot3PhaseLockOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot3PhaseOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot3PitchEnvMax" value="20000"/>
+    
+    
+    <PARAM id="Slot3PitchEnvRangeMax" value="100.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot3PitchSemi" value="-2.682209014892578e-7"/>
+    
+    
+    <PARAM id="Slot3SelectiveKeytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Solo" value="0.0"/>
+    
+    
+    <PARAM id="Slot3StartPoint" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay01" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay02" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay03" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay04" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay05" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay06" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay07" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubDecay08" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio01" value="1.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio02" value="2.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio03" value="3.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio04" value="4.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio05" value="5.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio06" value="6.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio07" value="7.0"/>
+    
+    
+    <PARAM id="Slot3SubFreqRatio08" value="7.999999523162842"/>
+    
+    
+    <PARAM id="Slot3SubHarmo01" value="100.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo02" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo03" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo04" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo05" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo06" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo07" value="0.0"/>
+    
+    
+    <PARAM id="Slot3SubHarmo08" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Tone" value="0.0"/>
+    
+    
+    <PARAM id="Slot3Type" value="0.0"/>
+    
+    
+    <PARAM id="Slot4AmpEnvMaxLen" value="245"/>
+    
+    
+    <PARAM id="Slot4AmpNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4AmpNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4EndPoint" value="100.0"/>
+    
+    
+    <PARAM id="Slot4Gain" value="0.0"/>
+    
+    
+    <PARAM id="Slot4HarmoGain" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Keytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Loop" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Mute" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Pan" value="0.0"/>
+    
+    
+    <PARAM id="Slot4PhaseInvert" value="0.0"/>
+    
+    
+    <PARAM id="Slot4PhaseLockOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot4PhaseOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot4PitchEnvMax" value="20000"/>
+    
+    
+    <PARAM id="Slot4PitchEnvRangeMax" value="100.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot4PitchSemi" value="-2.682209014892578e-7"/>
+    
+    
+    <PARAM id="Slot4SelectiveKeytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Solo" value="0.0"/>
+    
+    
+    <PARAM id="Slot4StartPoint" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay01" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay02" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay03" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay04" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay05" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay06" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay07" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubDecay08" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio01" value="1.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio02" value="2.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio03" value="3.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio04" value="4.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio05" value="5.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio06" value="6.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio07" value="7.0"/>
+    
+    
+    <PARAM id="Slot4SubFreqRatio08" value="7.999999523162842"/>
+    
+    
+    <PARAM id="Slot4SubHarmo01" value="100.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo02" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo03" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo04" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo05" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo06" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo07" value="0.0"/>
+    
+    
+    <PARAM id="Slot4SubHarmo08" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Tone" value="0.0"/>
+    
+    
+    <PARAM id="Slot4Type" value="0.0"/>
+    
+    
+    <PARAM id="Slot5AmpEnvMaxLen" value="245"/>
+    
+    
+    <PARAM id="Slot5AmpNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5AmpNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5EndPoint" value="100.0"/>
+    
+    
+    <PARAM id="Slot5Gain" value="0.0"/>
+    
+    
+    <PARAM id="Slot5HarmoGain" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Keytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Loop" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Mute" value="1.0"/>
+    
+    
+    <PARAM id="Slot5Pan" value="0.0"/>
+    
+    
+    <PARAM id="Slot5PhaseInvert" value="0.0"/>
+    
+    
+    <PARAM id="Slot5PhaseLockOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot5PhaseOffset" value="0.0"/>
+    
+    
+    <PARAM id="Slot5PitchEnvMax" value="20000"/>
+    
+    
+    <PARAM id="Slot5PitchEnvRangeMax" value="100.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode1_x" value="0.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode1_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode2_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode2_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode3_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode3_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode4_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode4_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode5_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode5_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode6_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode6_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode7_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode7_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode8_x" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchNode8_y" value="1.0"/>
+    
+    
+    <PARAM id="Slot5PitchSemi" value="-2.682209014892578e-7"/>
+    
+    
+    <PARAM id="Slot5SelectiveKeytrack" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Solo" value="0.0"/>
+    
+    
+    <PARAM id="Slot5StartPoint" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay01" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay02" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay03" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay04" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay05" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay06" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay07" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubDecay08" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio01" value="1.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio02" value="2.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio03" value="3.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio04" value="4.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio05" value="5.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio06" value="6.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio07" value="7.0"/>
+    
+    
+    <PARAM id="Slot5SubFreqRatio08" value="7.999999523162842"/>
+    
+    
+    <PARAM id="Slot5SubHarmo01" value="100.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo02" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo03" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo04" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo05" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo06" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo07" value="0.0"/>
+    
+    
+    <PARAM id="Slot5SubHarmo08" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Tone" value="0.0"/>
+    
+    
+    <PARAM id="Slot5Type" value="0.0"/>
+    
+    
+    <PARAM id="effectsEnabled" value="1.0"/>
+    
+    
+    <PARAM id="gate" value="0.0"/>
+    
+    
+    <PARAM id="internal_param" value="0.8599994778633118"/>
+    
+    
+    <PARAM id="macro1" value="0.0"/>
+    
+    
+    <PARAM id="macro2" value="0.0"/>
+    
+    
+    <PARAM id="macro3" value="0.0"/>
+    
+    
+    <PARAM id="macro4" value="0.0"/>
+    
+    
+    <PARAM id="masterLength" value="245"/>
+    
+    
+    <PARAM id="masterPan" value="0.0"/>
+    
+    
+    <PARAM id="outGain" value="0.0"/>
+    
+    
+    <PARAM id="outGainPosition" value="1.0"/>
+    
+    
+    <PARAM id="pitchWheelRange" value="7.0"/>
+    
+    
+    <PARAM id="portaTime" value="0.0"/>
+    
+    
+    <PARAM id="processingMode" value="1.0"/>
+    
+    
+    <PARAM id="retrig" value="0.0"/>
+    
+    
+    <PARAM id="retrigPriority" value="0.0"/>
+    
+    
+    <PARAM id="singleLengthMode" value="1.0"/>
+    
+    
+    <PARAM id="slideEnable" value="0.0"/>
+    
+    
+    <PARAM id="triggerListen" value="0.0"/>
+    
+    
+    <PARAM id="tuning" value="0.0"/>
+    
+    
+    <PARAM id="velocitySensitivity" value="0.0"/>
+    
+  
+  </PARAMS>
+  
+  
+  <DATA slot0_File="////////" slot0_FileDirty="0" slot0_SubFile="////////" slot0_SubFileDirty="1" slot1_File="////////" slot1_FileDirty="0" slot1_SubFile="////////" slot1_SubFileDirty="1" slot2_File="////////" slot2_FileDirty="0" slot2_SubFile="////////" slot2_SubFileDirty="1" slot3_File="////////" slot3_FileDirty="0" slot3_SubFile="////////" slot3_SubFileDirty="1" slot4_File="////////" slot4_FileDirty="0" slot4_SubFile="////////" slot4_SubFileDirty="1" slot0_PitchCurveFile="////////" slot0_PitchCurveFileDirty="1" slot0_AmpCurveFile="////////" slot0_AmpCurveFileDirty="1" slot1_PitchCurveFile="////////" slot1_PitchCurveFileDirty="1" slot1_AmpCurveFile="////////" slot1_AmpCurveFileDirty="1" slot2_PitchCurveFile="////////" slot2_PitchCurveFileDirty="1" slot2_AmpCurveFile="////////" slot2_AmpCurveFileDirty="1" slot3_PitchCurveFile="////////" slot3_PitchCurveFileDirty="1" slot3_AmpCurveFile="////////" slot3_AmpCurveFileDirty="1" slot4_PitchCurveFile="////////" slot4_PitchCurveFileDirty="1" slot4_AmpCurveFile="////////" slot4_AmpCurveFileDirty="1" slot0_SubFullFileDirty="1" slot1_SubFullFileDirty="1" slot2_SubFullFileDirty="1" slot3_SubFullFileDirty="1" slot0_SubFullFile="////////" masterFile="////////" masterFileDirty="0" slot4_SubFullFileDirty="1">
+    
+    
+    <Slot0_AmpEnvelope>
+      
+      
+      <node x="0.0" y="0.05" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.0034" y="0.551" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.0084" y="0.919" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.0374" y="0.748" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.1" y="0.613" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.22" y="0.669" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.38" y="0.696" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.52" y="0.676" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.625" y="0.541" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.755" y="0.237" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.95" y="0.054" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.98" y="0.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="1.0" y="0.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+    </Slot0_AmpEnvelope>
+    
+    
+    <Slot0_PitchEnvelope>
+      
+      
+      <node x="0.0" y="0.3" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.1429" y="0.16353" c="-0.041" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.2857" y="0.0943" c="-0.041" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.4286" y="0.05917" c="-0.02" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.5714" y="0.04135" c="-0.02" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.7143" y="0.03231" c="-0.02" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="0.8571" y="0.02772" c="-0.02" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      <node x="1.0" y="0.0254" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+    </Slot0_PitchEnvelope>
+    
+    
+    <Slot1_AmpEnvelope>
+      
+      
+      <node x="0.0" y="1.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+      
+      <node x="1.0" y="1.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+    
+    </Slot1_AmpEnvelope>
+    
+    
+    <Slot1_PitchEnvelope>
+      
+      
+      <node x="0.0" y="1.0" c="0.0" isKeytracked="1" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+      
+      <node x="1.0" y="1.0" c="0.0" isKeytracked="1" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+    
+    </Slot1_PitchEnvelope>
+    
+    
+    <Slot2_AmpEnvelope>
+      
+      
+      <node x="0.0" y="0.5" c="0.0" isKeytracked="0"/>
+      
+      
+      <node x="1.0" y="0.0" c="0.0" isKeytracked="0"/>
+      
+    
+    </Slot2_AmpEnvelope>
+    
+    
+    <Slot2_PitchEnvelope>
+      
+      
+      <node x="0.0" y="0.5" c="0.0" isKeytracked="0"/>
+      
+      
+      <node x="1.0" y="0.0" c="0.0" isKeytracked="1"/>
+      
+    
+    </Slot2_PitchEnvelope>
+    
+    
+    <Slot3_AmpEnvelope>
+      
+      
+      <node x="0.0" y="0.5" c="0.0" isKeytracked="0"/>
+      
+      
+      <node x="1.0" y="0.0" c="0.0" isKeytracked="0"/>
+      
+    
+    </Slot3_AmpEnvelope>
+    
+    
+    <Slot3_PitchEnvelope>
+      
+      
+      <node x="0.0" y="0.5" c="0.0" isKeytracked="0"/>
+      
+      
+      <node x="1.0" y="0.0" c="0.0" isKeytracked="1"/>
+      
+    
+    </Slot3_PitchEnvelope>
+    
+    
+    <Slot4_AmpEnvelope>
+      
+      
+      <node x="0.0" y="1.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+      
+      <node x="1.0" y="1.0" c="0.0" isKeytracked="0" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+    
+    </Slot4_AmpEnvelope>
+    
+    
+    <Slot4_PitchEnvelope>
+      
+      
+      <node x="0.0" y="1.0" c="0.0" isKeytracked="1" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+      
+      <node x="1.0" y="1.0" c="0.0" isKeytracked="1" isPhaseLocked="0" lockedPhaseValue="0.0"/>
+      
+    
+    </Slot4_PitchEnvelope>
+    
+    
+    <fxs>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="master0"/>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="master1"/>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="insert0_0"/>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="insert0_1"/>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="insert1_0"/>
+      
+      
+      <FxSettings IRFile="Factory/IR/Techno 1.aif" FxId="insert1_1"/>
+      
+    
+    </fxs>
+    
+    
+    <macros>
+      
+      
+      <MacroSettings MacroControllerIndex="0" MacroReceiverId=""/>
+      
+      
+      <MacroSettings MacroControllerIndex="1" MacroReceiverId=""/>
+      
+      
+      <MacroSettings MacroControllerIndex="2" MacroReceiverId=""/>
+      
+      
+      <MacroSettings MacroControllerIndex="3" MacroReceiverId=""/>
+      
+    
+    </macros>
+    
+    
+    <FxSettings/>
+    
+  
+  </DATA>
+  
+
+</Kick3>
